@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plyslv"
+authors = [{name = "Chendur", email = "chendurshreenu6@gmail.com"}]
+requires-python = ">= 3.8"
+readme = "README.md"
+description = "Module to solve quadratic-cubic polynomials"
+license = {text = "BSD-3-Clause"}
+
+keywords = []
+dependencies = ["cowsay"]
+classifiers = []
+dynamic = ["version"]
+
+[project.urls]
+Homepage="https://github.com/chendurshr/polysolve"
+Repository="https://github.com/chendurshr/polysolve.git"
+
+[tool.setuptools.dynamic]
+version = {attr = "plyslv.__version__"}
